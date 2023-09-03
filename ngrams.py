@@ -17,6 +17,7 @@ def ngrams(seq, n, with_counts=True):
         return grams, list(counts.items())
     return grams
 
+'''
 text_data = ['I', 'am', 'a', 'student', '.', 'I', 'like', 'to', 'study', '.']
 
 unigrams, counts = ngrams(text_data, 1)
@@ -35,3 +36,4 @@ trigrams, counts = ngrams(text_data, 3)
 trigram_pdist = Pdist(data=counts)
 trigram_prob = trigram_pdist(('I', 'am', 'a'))
 print("The probability of the trigram ('I', 'am', 'a') is:", trigram_prob)
+'''
